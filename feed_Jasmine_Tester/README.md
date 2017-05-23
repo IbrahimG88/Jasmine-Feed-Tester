@@ -7,17 +7,25 @@ To run the app:
 
 # Applications' used Tests Suites explanations
 
+## RSS Feeds
+
 - The first "RSS Feeds" test Suite has 3 tests:
 1. RSS Feeds are defined: Checks that allFeeds array is defined and its contents are more than one element.
 2. RSS feeds url are defined: Tests that every single element in the allFeeds array is defined and that there is any String input and more than one letter is added in the url property.
 3. RSS feeds allFeeds names are defined: Then that every array element has a name property for the individual feed and that its value of strings is not empty.
 
+## The menu
+
 - The second Suite is "The menu" Suite, which includes two tests:
 1. The menu menu-hidden HTML class contents are hidden initially: A boolean test for checking that body html element has a class named 'menu-hidden' in the body tag.
 2. The menu icon is clickable: menu-hidden class is true when the menu is hidden which is the default situation. So the test check that when the menu-hidden class related element is clicked the menu-hidden should be false - the menu is not hidden anymore -  and is displayed in its own layer. The second part of the tests checks the oppsite, that the menu-hidden hiding function is active again hiding the menu when clicked again.
 
+## Initial Entries
+
 - The third Suite is the "Initial Entries":
 1. Initial Entries at least a single .entry element in the .feed container: The test checks that the initial callback of loadFeed has at least one element. The loadFeed function has two parameters: id for numbering the feed entries and cp parameter. cp parameter is used to call the the second argument included in the loadFeed() function called. In this test the second argunment is done() function which is used to run the test asynchronously.
+
+## New Feed Selection
 
 - The fourth and final Suite is "New Feed Selection":
 1. First part defines the feed variable and assigns its value to be used in the following part of the test. Also the done() asynchronous function is called in the beforeEach method.
