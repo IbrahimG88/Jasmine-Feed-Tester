@@ -2,6 +2,10 @@
 
 To run the app:
 
+- [Click for GitHub Pages for this project]( https://ibrahimg88.github.io/Jasmine-Feed-Tester/) 
+
+or
+
 - Download the app's folder zip file.
 - Open the index.html file in any browser.
 
